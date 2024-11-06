@@ -2,18 +2,18 @@
 
 %1 mshta vbscript:CreateObject("Shell.Application").ShellExecute("cmd.exe","/c %~s0 ::","","runas",1)(window.close)&&exit
 
-IF NOT EXIST %appdata%\APHotspotFix (
-	mkdir %appdata%\APHotspotFix
+IF NOT EXIST %appdata%\HotspotFix (
+	mkdir %appdata%\HotspotFix
 	echo.
 )
 
-cd %appdata%\APHotspotFix
+cd %appdata%\HotspotFix
 
 :menu
 cls
 echo AP Hotspot Fix
 echo.
-echo Created by APascoa.
+echo Created by Nerexbcd.
 echo.
 echo MENU:
 echo [1] Fix the Hotspot
@@ -35,7 +35,7 @@ goto other
 cls
 echo AP Hotspot Fix
 echo.
-echo Created by APascoa.
+echo Created by Nerexbcd.
 echo.
 IF NOT EXIST ".\interface.txt" (
 	echo Plz Configure the interface first!!
@@ -56,7 +56,7 @@ goto menu
 cls
 echo AP Hotspot Fix
 echo.
-echo Created by APascoa.
+echo Created by Nerexbcd.
 echo.
 IF NOT EXIST ".\interface.txt" (
 	echo Plz Configure the interface first!!
@@ -76,7 +76,7 @@ goto menu
 cls
 echo AP Hotspot Fix
 echo.
-echo Created by APascoa.
+echo Created by Nerexbcd.
 echo.
 echo Change Interface
 echo.
